@@ -1,11 +1,11 @@
-import {CommonEsm} from './Common.esm.js';
+import {Common} from './Common.esm.js';
 import {media} from './Media.esm.js';
 
 const GAME_SCREEN_ID = 'js-game-screen';
 const CANVAS_WIDTH = 640;
 const CANVAS_HEIGHT = 480;
 
-class CanvasEsm extends CommonEsm {
+class Canvas extends Common {
   constructor() {
     super(GAME_SCREEN_ID);
     this.configureCanvas();
@@ -29,4 +29,4 @@ class CanvasEsm extends CommonEsm {
   }
 }
 
-export const canvas = new CanvasEsm();
+export const canvas = new Canvas();

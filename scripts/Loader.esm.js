@@ -1,4 +1,4 @@
-import {CommonEsm, HIDDEN_SCREEN, VISIBLE_SCREEN} from './Common.esm.js';
+import {Common, HIDDEN_SCREEN, VISIBLE_SCREEN} from './Common.esm.js';
 
 const LOAD_CURRENT_ID = 'js-loading-screen-current';
 const LOAD_TOTAL_ID = 'js-loading-screen-total';
@@ -6,7 +6,7 @@ const LOADER_ELEMENT_ID = 'js-loading-screen';
 
 export const DATA_LOADED_EVENT_NAME = 'dataLoaded';
 
-class LoaderEsm extends CommonEsm {
+class Loader extends Common {
   constructor() {
     super(LOADER_ELEMENT_ID);
     this.bindToElements();
@@ -49,4 +49,4 @@ class LoaderEsm extends CommonEsm {
   }
 }
 
-export const loader = new LoaderEsm();
+export const loader = new Loader();

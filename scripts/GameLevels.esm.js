@@ -1,4 +1,4 @@
-export const gameLevelsEsm = [
+export const gameLevels = [
   {
     level: 1,
   },

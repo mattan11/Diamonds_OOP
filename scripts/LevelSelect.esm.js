@@ -1,4 +1,4 @@
-import {CommonEsm, HIDDEN_SCREEN, VISIBLE_SCREEN} from './Common.esm.js';
+import {Common, HIDDEN_SCREEN, VISIBLE_SCREEN} from './Common.esm.js';
 import {canvas} from './Canvas.esm.js';
 import {DATA_LOADED_EVENT_NAME, loader} from './Loader.esm.js';
 import {game} from './Game.esm.js';
@@ -7,19 +7,19 @@ import {media} from './Media.esm.js';
 const LEVEL_SELECT_ID = 'js-level-select-screen';
 const LEVEL_SELECT_BUTTON_ID = 'level-select__button';
 
-// const gameLevels = [
-//   {
-//     level: 1,
-//   },
-//   {
-//     level: 2,
-//   },
-//   {
-//     level: 3,
-//   },
-// ];
+const gameLevels = [
+  {
+    level: 1,
+  },
+  {
+    level: 2,
+  },
+  {
+    level: 3,
+  },
+];
 
-class LevelSelectEsm extends CommonEsm {
+class LevelSelect extends Common {
   constructor() {
     super(LEVEL_SELECT_ID);
     gameLevels.forEach((gameLevel) => this.createButton(gameLevel.level));
@@ -51,4 +51,4 @@ class LevelSelectEsm extends CommonEsm {
   }
 }
 
-export const levelSelect = new LevelSelectEsm();
+export const levelSelect = new LevelSelect();

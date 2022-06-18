@@ -1,9 +1,9 @@
-import {CommonEsm, VISIBLE_SCREEN} from './Common.esm.js';
-import {gameLevelsEsm} from './GameLevels.esm.js';
+import {Common, VISIBLE_SCREEN} from './Common.esm.js';
+import {gameLevels} from './GameLevels.esm.js';
 import {DATA_LOADED_EVENT_NAME} from './Loader.esm.js';
 import {canvas} from './Canvas.esm.js';
 
-class GameEsm extends CommonEsm {
+class Game extends Common {
   constructor() {
     super();
   }
@@ -21,4 +21,4 @@ class GameEsm extends CommonEsm {
   }
 }
 
-export const game = new GameEsm();
+export const game = new Game();

@@ -1,4 +1,4 @@
-import {CommonEsm, HIDDEN_SCREEN, VISIBLE_SCREEN} from './Common.esm.js';
+import {Common, HIDDEN_SCREEN, VISIBLE_SCREEN} from './Common.esm.js';
 import {levelSelect} from './LevelSelect.esm.js';
 
 const SCALE_PROPERTY = '--scale-value';
@@ -8,7 +8,7 @@ const START_GAME_BUTTON_ID = 'js-start-game';
 export const BASE_RESOLUTION_WIDTH = 640;
 export const BASE_RESOLUTION_HEIGHT = 480;
 
-class MainMenuEsm extends CommonEsm {
+class MainMenu extends Common {
   constructor() {
     super(START_SCREEN_ID);
     this.bindToGameElements();
@@ -48,4 +48,4 @@ class MainMenuEsm extends CommonEsm {
   }
 }
 
-export const mainMenu = new MainMenuEsm();
+export const mainMenu = new MainMenu();

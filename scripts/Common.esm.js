@@ -2,7 +2,7 @@ export const HIDDEN_CLASS = 'hidden';
 export const HIDDEN_SCREEN = false;
 export const VISIBLE_SCREEN = true;
 
-export class CommonEsm {
+export class Common {
   constructor(elementId) {
     if (!elementId) return;
     this.element = this.bindToElement(elementId);

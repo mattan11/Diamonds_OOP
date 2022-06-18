@@ -1,4 +1,4 @@
-class MediaEsm {
+class Media {
   constructor() {
     this._backgroundImage = null;
     this._diamondsSprite = null;
@@ -17,4 +17,4 @@ class MediaEsm {
   }
 }
 
-export const media = new MediaEsm();
+export const media = new Media();
